@@ -1,0 +1,301 @@
+html{
+  direction: rtl;
+}
+
+.App {
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.App-header .headerTitle {
+  flex: 1;
+}
+
+.Container {
+
+  flex: 1;
+
+}
+
+.boxContainer {
+
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("./images/chatGPTbackground.jpeg");
+
+}
+
+.mainBox {
+  flex: 4;
+  margin: 10px;
+  padding: 5px;
+  text-align: right;
+  color: #FFF;
+}
+
+.whiteBreakLine {
+  width: 30%;
+  height: 1;
+  border: 1px solid #FFF;
+  background: "#FFF";
+  display: inline-block;
+}
+
+.mainBox p {
+
+  color: #FFF;
+  opacity: 1;
+  direction: rtl;
+
+}
+
+.mainActionButtons Button{
+  margin: 10px;
+}
+
+.chatBox {
+
+  display: flex;
+  flex-direction: column;
+  background-color: #CCC;
+  border: 1px solid #555;
+  border-radius: 30px;
+  height: 350px;
+  padding: 10px 0px 20px 0px;
+  margin: 70px;
+  box-shadow: 2px 2px 6px #555;
+}
+
+.messageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px;
+}
+
+.messageBox {
+
+  background-color: #FFF;
+  box-shadow: 2px 2px 6px #555;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  margin: 6px;
+  width: 70%;
+  text-align: left;
+  color: #FFF;
+
+}
+
+.whenSent {
+
+  font-size: 12px;
+  text-align: right;
+
+}
+
+.bottomBoxSend {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px 25px 30px 25px;
+  background: #CCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.bottomBoxSend Button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.infoForm {
+
+  direction: rtl;
+  display: inline-block;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  padding: 25px;
+
+}
+
+.infoForm .form-input {
+
+  margin: 25px 20px 25px 20px;
+
+}
+
+.infoForm .form-check {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.infoForm .check-label {
+  margin-right: 30px;
+
+}
+
+.formPath {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.formPath li {
+  flex: 1;
+  white-space: pre-line;
+  word-spacing: 9999999px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+
+}
+
+.formPath li .circle {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid #CCC;
+  border-radius: 60px;
+
+}
+
+.formBottom {
+  justify-content: flex-end;
+  text-align: left;
+  display: flex;
+  height: 45px;
+}
+
+.formBottom .nextButton {
+  margin-left: 45px;
+}
+
+.form-input {
+  text-align: right;
+}
+
+.resultMessage {
+  padding: 0px 30px 30px 30px;
+  text-align: right;
+  direction: rtl;
+  display: inline-block;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  white-space: pre-line;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 8px solid;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 0.4s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.startButton{
+  background-color: #00A3E0;
+}
+
+.knowMoreButton{
+  background-color: #3ce000;
+}
+
+.homeButton {}
+
+.mainServiceCotnainer{
+  padding: 50px 145px;
+}
+
+.statusBox{
+  background-color: #e04f02;
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  border-radius: 9px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.services{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service{
+  flex: 1;
+  margin: 10px 30px;
+}
+
+.service .seriveTitle{
+  background: #00A3E0;
+  color: #FFF;
+  padding: 10px;
+}
+
+.servicePackageBox{
+  height: 115px;
+  border: 1px solid #CCC;
+  box-shadow: 5px 5px 3px #888888;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottomImage{
+  background-image: url("./images/bottomImage.jpeg"); /* The image used */
+  background-color: #74a2ba; /* Used if the image is unavailable */
+  height: 350px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+}
