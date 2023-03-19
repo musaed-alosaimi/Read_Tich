@@ -144,7 +144,7 @@ function FeasibilityInfo() {
         });
 
         let headers = {
-            Authorization: "Bearer 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",
+            "Authorization": "Bearer [Add Token Here]",
             'Content-Type': 'application/json'
         };
 
